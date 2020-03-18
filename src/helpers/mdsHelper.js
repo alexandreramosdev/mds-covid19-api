@@ -17,12 +17,12 @@ class MdsHelper {
     this["values"] = this["values"].map(value => ({
       uid: value["uid"] || "",
       state: states[value["uid"]] || "",
-      case: value["case"] || 0,
+      cases: value["cases"] || 0,
       deaths: value["deaths"] || 0,
       suspects: value["suspects"] || 0,
       refuses: value["refuses"] || 0,
-      broadcast: value["broadcast"] || 0,
-      comments: value["comments"] || 0,
+      broadcast: value["broadcast"] || false,
+      comments: value["comments"] || '',
     }))
   }
 }
