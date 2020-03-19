@@ -1,18 +1,14 @@
 {
-  "name": "wrapper-api",
+  "name": "mds-covid19-api",
   "version": "1.0.0",
   "main": "index.js",
+  "repository": "git@github.com:alexandreramosdev/mds-covid19-api.git",
   "author": "Alexandre Ramos dos Santos <alexandresantos84@gmail.com>",
   "license": "MIT",
-  "scripts": {
-    "start": "node src/server.js",
-    "dev": "nodemon src/server.js"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.2"
-  },
-  "dependencies": {
-    "axios": "^0.19.2",
-    "express": "^4.17.1"
+  "private": true,
+  "workspaces":{
+    "packages":[
+      "server"
+    ]
   }
 }
