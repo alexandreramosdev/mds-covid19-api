@@ -10,5 +10,8 @@
     "packages":[
       "server"
     ]
+  },
+  "scripts": {
+    "start": "yarn workspace server start"
   }
 }
