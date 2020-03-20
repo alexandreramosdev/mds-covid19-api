@@ -8,10 +8,12 @@
   "private": true,
   "workspaces":{
     "packages":[
-      "server"
+      "server",
+      "client"
     ]
   },
   "scripts": {
+    "dev:client":"yarn workspace client develop",
     "start": "yarn workspace server start"
   }
 }
